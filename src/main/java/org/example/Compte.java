@@ -90,16 +90,15 @@ public class Compte {
         transactions = transactions;
     }
 
-    @Override
     public String toString() {
-        return "Compte {\n" +
+        return "{\n" +
                 "  banque: " + banque + "\n" +
-                "  numCompte: '" + numCompte + "'\n" +
+                "  numCompte: " + numCompte + "\n" +
                 "  dateCrea: " + dateCrea + "\n" +
                 "  dateUpdate: " + dateUpdate + "\n" +
-                "  devise: '" + devise + "'\n" +
+                "  devise: " + devise + "\n" +
                 "  proprietaire: " + proprietaire + "\n" +
-                "transactions : ;"+
+                "transactions :"+transactions +
                 "}";
     }
 

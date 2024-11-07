@@ -90,13 +90,13 @@ public class Client {
 
     @Override
     public String toString() {
-        return "Client : {\n" +
-                "  adresse: " + adresse + "\n" +
-                "  numClient: " + numClient + "\n" +
-                "  nom: " + nom + "\n" +
-                "  prenom: " + prenom + "\n" +
-                "  phone: " + phone + "\n" +
-                "  email: " + email + "\n" +
+        return "{ " +
+                "  adresse: " + adresse + " " +
+                "  numClient: " + numClient + " " +
+                "  nom: " + nom + " " +
+                "  prenom: " + prenom + " " +
+                "  phone: " + phone + " " +
+                "  email: " + email + " " +
                 "}";
     }
 

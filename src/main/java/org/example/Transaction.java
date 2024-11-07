@@ -1,7 +1,7 @@
 package org.example;
 import java.time.LocalDateTime;
 
-final public class Transaction {
+public class Transaction {
     public enum Type {
         VIRIN, // Transaction entre 2 clients de la même banque
         VIREST, // Transaction entre 2 clients dans le même pays
@@ -63,7 +63,21 @@ final public class Transaction {
         return type;
     }
 
+
+
     public void setType(Type type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "compteDestination=" + compteDestination.getNumCompte() +
+                ", type=" + type +
+                ", timeStamp=" + timeStamp +
+                ", reference='" + reference + '\'' +
+                ", compteSource=" + compteSource.getNumCompte() +
+                '}';
+    }
+
 }

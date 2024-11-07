@@ -44,9 +44,9 @@ public class Banque {
 
     @Override
     public String toString() {
-        return "Banque {\n" +
-                "  id: " + id + "\n" +
-                "  pays: '" + pays + "'\n" +
+        return "{ " +
+                "  id: " + id + " " +
+                "  pays: " + pays + " " +
                 "}";
     }
 
